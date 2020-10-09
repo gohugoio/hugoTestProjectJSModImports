@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{ .Title }}
+  </title>
+  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false ) }}
+  <script src="{{ $js.RelPermalink }}"></script>
+  {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+</head>
+<body class="mt-10">
+<div class="" x-data="{}">
+  <ul>
+    <li x-text="hello1()"></li>
+    <li x-text="hello2()"></li>
+    <li x-text="hello3()"></li>
+    <li x-text="hello4()"></li>
+    <li x-text="data.Hugo"></li>
+  </ul>
+</div>

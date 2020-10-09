@@ -1,0 +1,11 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../../hugoTestModulesJS/mod1/assets/*",
+    "../../hugoTestModulesJS/mod2/assets/*"
+   ]
+  }
+ }
+}

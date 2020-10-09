@@ -1,0 +1,16 @@
+github.com/alpinejs/alpine v2.5.0+incompatible/go.mod h1:BKI81egATMnaKqFeX5HEfYMnjZjcjcZmrYAu5Nck+EY=
+github.com/bep/hugo-jslibs v0.0.0-20200822141830-44620243312e h1:JWYiSAOCdD0HO7ySFZgwiQcq4/vqObqTqesFSJ2sesw=
+github.com/bep/hugo-jslibs/alpinejs v0.5.14 h1:PeZOraYYU+bH10G2Y/5M5VJsqOQyLAWCukvUIyQeTlE=
+github.com/bep/hugo-jslibs/alpinejs v0.5.14/go.mod h1:AKan86yhrI16Cp+ga/+UuRkBgaO25SpubHWFgMTzh3o=
+github.com/date-fns/date-fns v1.30.1 h1:zxR21/H1aFIN9dJnRPgWzm/d4vMjiPv0daTAJ+lJYJk=
+github.com/date-fns/date-fns v2.16.1+incompatible h1:MhC76uGURHPWnZhfKDJs+ckojxxKwAFd3D/7VN3NQKo=
+github.com/date-fns/date-fns v2.16.1+incompatible/go.mod h1:+ryiPUdf29FTxQJUxCwq0ip75zSWtk43q+htSAQLdFU=
+github.com/gohugoio/hugoTestModulesJS v0.0.0-20201010100233-8db744a82e35 h1:Cha7HDCdZ57kmJpY5GgHNPoW8R1aRCHm9vOTe4wmJOg=
+github.com/gohugoio/hugoTestModulesJS v0.0.0-20201011192008-decf54abafdd h1:IyL0HL6wUsRyCDelBh38gfDoiKMpJRrSJZDDdUVsiKo=
+github.com/gohugoio/hugoTestModulesJS/mod1 v0.0.0-20201010100233-8db744a82e35/go.mod h1:IfctxwCwBB4wVUA+bUb4o5x2mvphWPXVLhKaclkpwz4=
+github.com/gohugoio/hugoTestModulesJS/mod1 v0.0.0-20201010100603-5c7000b063e3 h1:6oAL5GX/uwfxpHog2bvTq2ARbf/strSuRZIX/KjZbIg=
+github.com/gohugoio/hugoTestModulesJS/mod1 v0.0.0-20201010100603-5c7000b063e3/go.mod h1:IfctxwCwBB4wVUA+bUb4o5x2mvphWPXVLhKaclkpwz4=
+github.com/gohugoio/hugoTestModulesJS/mod1 v0.0.0-20201011174806-5f7e20f9ff4a h1:h/+C4m4Aav50zgU2pfm2+GpuhoEgwVKkiRhDK2fjADs=
+github.com/gohugoio/hugoTestModulesJS/mod1 v0.0.0-20201011174806-5f7e20f9ff4a/go.mod h1:IfctxwCwBB4wVUA+bUb4o5x2mvphWPXVLhKaclkpwz4=
+github.com/gohugoio/hugoTestModulesJS/mod2 v0.0.0-20201011192008-decf54abafdd h1:Uu3lXkigL0q13sVksE7NVnoPTyxx4ViYKrNA70QDKA4=
+github.com/gohugoio/hugoTestModulesJS/mod2 v0.0.0-20201011192008-decf54abafdd/go.mod h1:uynOkor8I03PIUuDZN4NYQ+Bmkye7vNLV5tRUBC2+10=

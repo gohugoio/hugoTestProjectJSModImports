@@ -1,0 +1,19 @@
+baseURL = "https://example.org"
+
+disableKinds = ["page", "section", "term", "taxonomy"]
+
+
+[module]
+[[module.imports]]
+path="github.com/gohugoio/hugoTestModulesJS/mod1"
+[[module.imports]]
+path="github.com/gohugoio/hugoTestModulesJS/mod2"
+[[module.imports]]
+path="github.com/date-fns/date-fns"
+[[module.imports.mounts]]
+source="src"
+target="assets/date"
+
+[[module.imports]]
+# This is not relevant for the testing itself.
+path = "github.com/bep/hugo-jslibs/alpinejs"

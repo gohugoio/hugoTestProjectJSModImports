@@ -1,7 +1,5 @@
-// From mod1, but get its data from mod2.
-import { hello1 } from 'core/util';
-// From mod1
-import { hello2 } from 'core/util';
+// From mod1, but hello1 get its data from mod2.
+import { hello1, hello2 } from 'core/util';
 // From mod2
 import * as data from 'core/util/data.json';
 // hello3 lives in mod2 which also have a index.js in util.

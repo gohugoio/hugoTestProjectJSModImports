@@ -5,7 +5,7 @@
   <title>
     {{ .Title }}
   </title>
-  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false ) }}
+  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false "params" (dict "myparam" "Hugo Rocks!!!!!!") ) }}
   <script src="{{ $js.RelPermalink }}"></script>
   {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
 </head>
@@ -17,5 +17,6 @@
     <li x-text="hello3()"></li>
     <li x-text="hello4()"></li>
     <li x-text="data.Hugo"></li>
+    <li x-text="params.myparam"></li>
   </ul>
 </div>

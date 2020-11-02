@@ -8,9 +8,12 @@ import * as data from 'core/util/data.json';
 import { hello3 } from 'core/util/hello3';
 // From main
 import { hello4 } from './lib';
+// From the Hugo template.
+import * as params from '@params';
 
 window.hello1 = hello1;
 window.hello2 = hello2;
 window.hello3 = hello3;
 window.hello4 = hello4;
 window.data = data;
+window.params = params;

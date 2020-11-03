@@ -1,0 +1,29 @@
+{
+ "author": "",
+ "bugs": {
+  "url": "https://github.com/gohugoio/hugoTestProjectJSModImports/issues"
+ },
+ "comments": {
+  "dependencies": {
+   "date-fns": "github.com/gohugoio/hugoTestModulesJS/mod2"
+  },
+  "devDependencies": {}
+ },
+ "dependencies": {
+  "date-fns": "^2.16.1"
+ },
+ "description": "Test project used for integration testing.",
+ "devDependencies": {},
+ "homepage": "https://github.com/gohugoio/hugoTestProjectJSModImports#readme",
+ "license": "ISC",
+ "main": "index.js",
+ "name": "hugotestprojectjsmodimports",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/gohugoio/hugoTestProjectJSModImports.git"
+ },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "version": "1.0.0"
+}

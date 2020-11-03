@@ -6,6 +6,7 @@ import * as data from 'core/util/data.json';
 // But doing import from 'core/util' you will get the index.js file from mod1
 // (higher up in the import list), so we need to be explicit:
 import { hello3 } from 'core/util/hello3';
+
 // From main
 import { hello4 } from './lib';
 // From the Hugo template.

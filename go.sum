@@ -18,3 +18,4 @@ github.com/gohugoio/hugoTestModulesJS/mod2 v0.0.0-20201011192008-decf54abafdd h1
 github.com/gohugoio/hugoTestModulesJS/mod2 v0.0.0-20201011192008-decf54abafdd/go.mod h1:uynOkor8I03PIUuDZN4NYQ+Bmkye7vNLV5tRUBC2+10=
 github.com/gohugoio/hugoTestModulesJS/mod2 v0.1.0/go.mod h1:uynOkor8I03PIUuDZN4NYQ+Bmkye7vNLV5tRUBC2+10=
 github.com/gohugoio/hugoTestModulesJS/mod2 v0.2.0/go.mod h1:uynOkor8I03PIUuDZN4NYQ+Bmkye7vNLV5tRUBC2+10=
+github.com/gohugoio/hugoTestModulesJS/mod2 v0.3.0/go.mod h1:uynOkor8I03PIUuDZN4NYQ+Bmkye7vNLV5tRUBC2+10=

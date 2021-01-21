@@ -13,13 +13,13 @@ import { hello4 } from './lib';
 import * as params from '@params';
 
 // https://github.com/gohugoio/hugo/issues/7948
-import { helloNodeModules } from 'mynodemod';
+// TODO(bep) make this work in Hugo integration tests import { helloNodeModules } from 'mynodemod';
 
 window.hello1 = hello1;
 window.hello2 = hello2;
 window.hello3 = hello3;
 window.hello4 = hello4;
 window.hello6 = hello6;
-window.helloNodeModules = helloNodeModules;
+// TODO(bep) make this work in Hugo integration tests window.helloNodeModules = helloNodeModules;
 window.data = data;
 window.params = params;

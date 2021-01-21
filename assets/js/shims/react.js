@@ -1,1 +1,1 @@
-export let React = window.React;
+module.exports = window.React;

@@ -1,6 +1,6 @@
 // Note: We're using the CDN in "production".
 import * as React from 'react'
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from 'react-dom';
 
 // A simple React JSX component.
 class LikeButton extends React.Component {

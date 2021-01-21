@@ -1,1 +1,1 @@
-export let ReactDOM = window.ReactDOM;
+module.exports = window.ReactDOM;

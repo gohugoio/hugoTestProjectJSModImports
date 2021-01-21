@@ -1,3 +1,5 @@
 public/
-node_modules/date-fns/
 assets/jsconfig.json
+!node_modules/
+node_modules/*
+!node_modules/mynodemod/

@@ -1,24 +1,47 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>
-    {{ .Title }}
-  </title>
-  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false "params" (dict "myparam" "Hugo Rocks!") ) }}
-  <script src="{{ $js.RelPermalink }}"></script>
-  {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
-</head>
-<body class="mt-10">
-<div class="" x-data="{}">
-  <ul>
-    <li x-text="hello1()"></li>
-    <li x-text="hello2()"></li>
-    <li x-text="hello3()"></li>
-    <li x-text="hello4()"></li>
-    <li x-text="hello6()"></li>
-    <li x-text="helloNodeModules()"></li>
-    <li x-text="data.Hugo"></li>
-    <li x-text="params.myparam"></li>
-  </ul>
-</div>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ .Title }}
+    </title>
+    {{ if hugo.IsProduction }}
+      {{/* We import from node_modules in development to get code completion etc. working. */}}
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    {{ end }}
+    {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false "params" (dict "myparam" "Hugo Rocks!")  ) }}
+    <script src="{{ $js.RelPermalink }}"></script>
+    {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+  </head>
+  <body class="mt-10">
+    <h2>
+      Basic Test Cases
+    </h2>
+    <div class="" x-data="{}">
+      <ul>
+        <li x-text="hello1()"></li>
+        <li x-text="hello2()"></li>
+        <li x-text="hello3()"></li>
+        <li x-text="hello4()"></li>
+        <li x-text="hello6()"></li>
+        <li x-text="helloNodeModules()"></li>
+        <li x-text="data.Hugo"></li>
+        <li x-text="params.myparam"></li>
+      </ul>
+    </div>
+    <h2>
+      React
+    </h2>
+    <div id="like_button_container"></div>
+    {{ $shims := dict }}
+    {{ $defines := dict }}
+    {{ if hugo.IsProduction }}
+      {{ $shims = dict "react" "js/shims/react.js"  "react-dom" "js/shims/react-dom.js" }}
+    {{ else }}
+      {{ $defines = dict "process.env.NODE_ENV" `"development"` }}
+    {{ end }}
+    {{ $js := resources.Get "js/like.jsx" | js.Build (dict "shims" $shims "defines" $defines ) }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  </body>
+</html>

@@ -10,10 +10,14 @@
   "devDependencies": {}
  },
  "dependencies": {
-  "date-fns": "^2.16.1"
+  "date-fns": "^2.16.1",
+  "react": "^17.0.1",
+  "react-dom": "^17.0.1"
  },
  "description": "Test project used for integration testing.",
- "devDependencies": {},
+ "devDependencies": {
+  
+ },
  "homepage": "https://github.com/gohugoio/hugoTestProjectJSModImports#readme",
  "license": "ISC",
  "main": "index.js",

@@ -1,4 +1,4 @@
-// From mod1, but hello1 get its data from mod2.
+//// From mod1, but hello1 get its data from mod2.
 import { hello1, hello2 } from 'core/util';
 // From mod2
 import * as data from 'core/util/data.json';

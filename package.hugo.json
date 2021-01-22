@@ -1,19 +1,35 @@
 {
-  "name": "hugotestprojectjsmodimports",
-  "version": "1.0.0",
-  "description": "Test project used for integration testing.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+ "author": "",
+ "bugs": {
+  "url": "https://github.com/gohugoio/hugoTestProjectJSModImports/issues"
+ },
+ "comments": {
+  "dependencies": {
+   "date-fns": "github.com/gohugoio/hugoTestModulesJS/mod2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gohugoio/hugoTestProjectJSModImports.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gohugoio/hugoTestProjectJSModImports/issues"
-  },
-  "homepage": "https://github.com/gohugoio/hugoTestProjectJSModImports#readme"
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+ },
+ "dependencies": {
+  "date-fns": "^2.16.1"
+ },
+ "description": "Test project used for integration testing.",
+ "devDependencies": {
+  "react": "^17.0.1",
+  "react-dom": "^17.0.1"
+ },
+ "homepage": "https://github.com/gohugoio/hugoTestProjectJSModImports#readme",
+ "license": "ISC",
+ "main": "index.js",
+ "name": "hugotestprojectjsmodimports",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/gohugoio/hugoTestProjectJSModImports.git"
+ },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "version": "1.0.0"
 }

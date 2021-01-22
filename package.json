@@ -5,18 +5,20 @@
  },
  "comments": {
   "dependencies": {
-   "date-fns": "github.com/gohugoio/hugoTestModulesJS/mod2"
+   "date-fns": "project"
   },
-  "devDependencies": {}
+  "devDependencies": {
+   "react": "project",
+   "react-dom": "project"
+  }
  },
  "dependencies": {
-  "date-fns": "^2.16.1",
-  "react": "^17.0.1",
-  "react-dom": "^17.0.1"
+  "date-fns": "^2.16.1"
  },
  "description": "Test project used for integration testing.",
  "devDependencies": {
-  
+  "react": "^17.0.1",
+  "react-dom": "^17.0.1"
  },
  "homepage": "https://github.com/gohugoio/hugoTestProjectJSModImports#readme",
  "license": "ISC",
@@ -27,7 +29,7 @@
   "url": "git+https://github.com/gohugoio/hugoTestProjectJSModImports.git"
  },
  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "echo \"Error: no test specified\" \u0026\u0026 exit 1"
  },
  "version": "1.0.0"
 }

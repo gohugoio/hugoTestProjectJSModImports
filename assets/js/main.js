@@ -20,6 +20,7 @@ window.hello2 = hello2;
 window.hello3 = hello3;
 window.hello4 = hello4;
 window.hello6 = hello6;
+window.cwd = process.cwd; // Shim injected
 // TODO(bep) make this work in Hugo integration tests window.helloNodeModules = helloNodeModules;
 window.data = data;
 window.params = params;

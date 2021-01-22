@@ -10,7 +10,8 @@
       <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
       <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     {{ end }}
-    {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false "params" (dict "myparam" "Hugo Rocks!")  ) }}
+    {{ $inject := slice "js/shims/process.js" }}
+    {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" false "params" (dict "myparam" "Hugo Rocks!") "inject" $inject ) }}
     <script src="{{ $js.RelPermalink }}"></script>
     {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
   </head>
@@ -25,6 +26,7 @@
         <li x-text="hello3()"></li>
         <li x-text="hello4()"></li>
         <li x-text="hello6()"></li>
+        <li x-text="cwd()"></li>
         <!--li x-text="helloNodeModules()"></li-->
         <li x-text="data.Hugo"></li>
         <li x-text="params.myparam"></li>

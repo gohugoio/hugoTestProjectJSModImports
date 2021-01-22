@@ -29,7 +29,7 @@
   "url": "git+https://github.com/gohugoio/hugoTestProjectJSModImports.git"
  },
  "scripts": {
-  "test": "echo \"Error: no test specified\" \u0026\u0026 exit 1"
+  "test": "echo \"Error: no test specified\" && exit 1"
  },
  "version": "1.0.0"
 }

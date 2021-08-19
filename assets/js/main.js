@@ -12,6 +12,18 @@ import { hello4 } from './lib';
 // From the Hugo template.
 import * as params from '@params';
 
+var worker = new Worker(params.myworker);
+
+worker.addEventListener(
+	'message',
+	function(e) {
+		console.log('Worker said: ', e.data);
+	},
+	false
+);
+
+worker.postMessage('Hello Worker');
+
 // https://github.com/gohugoio/hugo/issues/7948
 // TODO(bep) make this work in Hugo integration tests import { helloNodeModules } from 'mynodemod';
 
